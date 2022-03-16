@@ -1,25 +1,23 @@
 import logo from './logo.svg';
 import './App.css';
 
-function App() {
+function App(pros) {
+  const products=[{name:"laptop",price:75000},
+                  {name:"mobile",price:50000},
+                {name:"TV",price:40000}]
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+     {products.map(product=><Product name={product.name} price={product.price}></Product>)}
     </div>
   );
+}
+function Product(pros){
+  return (
+    <div className='product-style'>
+      <h1>Product:{pros.name}</h1>
+      <h2>Price:{pros.price}</h2>   
+    </div>
+  )
 }
 
 export default App;
