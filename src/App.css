@@ -36,11 +36,12 @@
     transform: rotate(360deg);
   }
 }
-.product-style{
+.counter-style{
   background-color: #61dafb;
   width: 40%;
   margin: 20px auto;
   border: 2px solid blue;
   border-radius: 20px;
   box-shadow: 2px 4px 4px rgba(54, 54, 54, 0.692);
+  padding: 20px;
 }
